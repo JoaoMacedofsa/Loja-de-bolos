@@ -1,0 +1,338 @@
+/* Define o estilo base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f6f1; /* Bege claro */
+    color: #4b2e2e; /* Marrom escuro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho principal */
+h1, h2, h3 {
+    text-align: center;
+    color: #5c3c3c; /* Marrom moderado */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+/* Navegação */
+nav div {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #8b5e3b; /* Marrom médio */
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #5c3c3c; /* Marrom escuro */
+}
+
+/* Formulários */
+form {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #fff8ec; /* Tom bege */
+    border: 1px solid #d3bfa7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-weight: bold;
+    color: #5c3c3c;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #d3bfa7;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #8b5e3b; /* Marrom médio */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #5c3c3c; /* Marrom escuro */
+}
+
+/* Tabela */
+.container {
+    width: 90%;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    background-color: #fff8ec; /* Bege */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #8b5e3b; /* Marrom médio */
+    color: #ffffff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f2e6d9; /* Bege mais escuro */
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+td a {
+    color: #8b5e3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    color: #5c3c3c; /* Marrom escuro */
+}
+
+/* Rodapé */
+footer {
+    margin-top: auto; /* Empurra o footer para o final da página */
+    text-align: center;
+    padding: 20px 0;
+    background-color: #8b5e3b; /* Marrom médio */
+    color: #ffffff;
+    font-size: 1em;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave na parte superior */
+    width: 100%; /* Garante que o footer ocupe 100% da largura */
+}
+
+/* Links no rodapé */
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #d4d4d4; /* Cor mais clara para os links no hover */
+}
+
+/* Estilo de copyright */
+footer .copyright {
+    font-size: 0.9em;
+    margin-top: 10px;
+    color: #d1d1d1; /* Cor de texto suave para o copyright */
+}
+
+/* Mensagens de sucesso */
+.mensagem-sucesso {
+    background-color: #d4edda; /* Verde claro */
+    color: #155724; /* Verde escuro */
+    border: 1px solid #c3e6cb;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* Mensagens de erro */
+.mensagem-erro {
+    background-color: #f8d7da; /* Vermelho claro */
+    color: #721c24; /* Vermelho escuro */
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #F5E5C0; /* Fundo bege claro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    font-family: Arial, sans-serif;
+}
+
+/* Links da Navbar */
+.navbar .nav-link {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #5A4033; /* Texto em marrom escuro */
+    padding: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #8B5E3B; /* Marrom médio ao passar o mouse */
+}
+
+/* Separador ("|") */
+.navbar .nav-link.text-dark.fw-bold[href="#"] {
+    cursor: default;
+    pointer-events: none; /* Torna o separador não clicável */
+    color: #8B5E3B; /* Cor do separador */
+}
+
+/* Botões à direita */
+.navbar .btn {
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    background-color: #5A4033; /* Fundo marrom escuro */
+    color: white; /* Texto branco */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito hover nos botões */
+.navbar .btn:hover {
+    background-color: #8B5E3B; /* Marrom médio */
+    transform: scale(1.05); /* Leve aumento no tamanho */
+}
+
+/* Logo */
+.navbar-brand img {
+    border-radius: 50%; /* Deixa a logo redonda */
+    border: 2px solid #5A4033; /* Borda marrom escuro ao redor da logo */
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: rotate(360deg); /* Gira a logo ao passar o mouse */
+}
+
+/* Centralização dos links */
+.navbar .mx-auto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar .mx-auto {
+        flex-direction: column;
+    }
+
+    .navbar .nav-link {
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .navbar .btn {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+/* Tabela */
+.container {
+    width: 90%;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    background-color: #fff8ec; /* Bege */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #8b5e3b; /* Marrom médio */
+    color: #ffffff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f2e6d9; /* Bege mais escuro */
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+td a {
+    color: #8b5e3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    color: #5c3c3c; /* Marrom escuro */
+}
+
+/* Tamanho das imagens na tabela */
+table img {
+    max-width: 100px; /* Largura máxima para as imagens */
+    max-height: 100px; /* Altura máxima para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra a área definida sem distorcer */
+    border-radius: 5px; /* Opcional, caso queira bordas arredondadas nas imagens */
+}
+
